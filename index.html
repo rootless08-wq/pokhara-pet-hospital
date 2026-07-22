@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pokhara Pet Hospital | 24/7 Veterinary Care in Pokhara</title>
+
+<meta name="description" content="Pokhara Pet Hospital Pvt. Ltd. — professional veterinary care, surgery, vaccination and 24/7 emergency services at Pokhara-14, Khasibazar, near the International Airport.">
+
+<meta name="theme-color" content="#104469">
+
+<link rel="icon" href="image/logo.png.jpg">
+
+<!-- Instrument Serif for headlines, Figtree for everything else. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css?v=11">
+</head>
+
+<body>
+
+<!-- ============ TOP EMERGENCY STRIP ============ -->
+<div class="top-strip">
+    <p>Open 24 hours, 7 days — emergencies welcome anytime</p>
+    <p class="top-strip-phones">
+        <a href="tel:9802859465">9802859465</a>
+        <span aria-hidden="true">·</span>
+        <a href="tel:061590375">061-590375</a>
+    </p>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="site-header">
+    <nav class="nav">
+        <a href="#home" class="logo">
+            <img src="image/logo.png.jpg" alt="">
+            <span>Pokhara Pet Hospital</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="primary-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#appointment" class="btn btn-primary nav-cta">Book appointment</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+    <div class="container hero-grid">
+
+        <!-- Dark green panel: the headline and the live assistant input -->
+        <div class="hero-panel">
+            <div class="hero-brand">
+                <img src="image/logo.png.jpg" alt="Pokhara Pet Hospital logo">
+                <div class="hero-brand-text">
+                    <strong>Pokhara Pet Hospital</strong>
+                    <span>Pvt. Ltd. &middot; Estd 2026</span>
+                </div>
+            </div>
+
+            <p class="eyebrow eyebrow-light">Pokhara-14 · Khasibazar · Near the International Airport</p>
+
+            <h1>Say hello to Mitra,<br>your pet care assistant.</h1>
+
+            <p class="hero-sub">
+                Tell Mitra what your pet needs and it books the visit for you —
+                any hour, any day. A real veterinarian sees you at the clinic.
+            </p>
+
+            <!-- ★ SIGNATURE ELEMENT ★
+                 A working chat input sitting in the hero. Typing here opens
+                 the assistant with the question already sent. -->
+            <form class="hero-ask" id="heroAsk" autocomplete="off">
+                <label class="sr-only" for="heroAskInput">Ask Mitra about your pet</label>
+                <input type="text" id="heroAskInput" placeholder="How do I prepare my pup for their next visit?">
+                <button type="submit" aria-label="Ask Mitra">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+                </button>
+            </form>
+
+            <div class="hero-buttons">
+                <a href="tel:9802859465" class="btn btn-lime">Call 9802859465</a>
+                <a href="https://wa.me/9779802859465?text=Hello%20Pokhara%20Pet%20Hospital%2C%20I%20want%20to%20book%20an%20appointment." class="btn btn-ghost-light">WhatsApp us</a>
+            </div>
+        </div>
+
+        <!-- Optional video or photo. Missing file? The block simply hides. -->
+        <div class="hero-media">
+            <div class="brand-mark brand-mark-hero" aria-hidden="true"><svg viewBox="0 0 200 200" fill="currentColor" aria-hidden="true"><ellipse cx="63" cy="63" rx="20" ry="27" transform="rotate(-20 63 63)"/><ellipse cx="87" cy="42" rx="20" ry="28" transform="rotate(-6 87 42)"/><ellipse cx="116" cy="42" rx="20" ry="28" transform="rotate(6 116 42)"/><ellipse cx="140" cy="63" rx="20" ry="27" transform="rotate(20 140 63)"/><path fill-rule="evenodd" d="M100 82 C 128 82 152 106 152 133 C 152 158 128 172 100 172 C 72 172 48 158 48 133 C 48 106 72 82 100 82 Z M91 104 L91 120 L75 120 L75 140 L91 140 L91 158 L109 158 L109 140 L125 140 L125 120 L109 120 L109 104 Z"/></svg></div>
+            <video class="hero-video" autoplay muted loop playsinline poster="image/hero-poster.jpg">
+                <source src="video/hero.mp4" type="video/mp4">
+            </video>
+            <div class="hero-media-fallback" aria-hidden="true">
+                <svg viewBox="0 0 100 100"><g fill="currentColor"><ellipse cx="50" cy="66" rx="20" ry="16"/><ellipse cx="26" cy="42" rx="9" ry="12" transform="rotate(-20 26 42)"/><ellipse cx="42" cy="28" rx="9" ry="12" transform="rotate(-6 42 28)"/><ellipse cx="58" cy="28" rx="9" ry="12" transform="rotate(6 58 28)"/><ellipse cx="74" cy="42" rx="9" ry="12" transform="rotate(20 74 42)"/></g></svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- ★ THE CLINIC PETS ★ Redrawn happy: arched brows, real smiles,
+         blush, and a tongue that stays a little bit out. Their eyes
+         follow the cursor and they react when you pet them. -->
+    <div class="container pet-row">
+
+        <svg class="clinic-pet clinic-dog" viewBox="0 0 300 340" role="img" aria-label="A cheerful dog">
+            <ellipse cx="150" cy="328" rx="98" ry="8" fill="#104469" opacity="0.16"/>
+
+            <g class="dog-tail">
+                <path d="M92 258 Q 48 236 60 196" fill="none" stroke="#104469" stroke-width="21" stroke-linecap="round"/>
+                <path d="M92 258 Q 48 236 60 196" fill="none" stroke="#f7f4e7" stroke-width="16" stroke-linecap="round"/>
+            </g>
+
+            <g class="pet-body">
+                <path d="M150 120 C 104 134 86 184 83 234 C 80 278 106 298 150 298 C 194 298 220 278 217 234 C 214 184 196 134 150 120 Z" fill="#f7f4e7" stroke="#104469" stroke-width="2.6"/>
+                <ellipse cx="150" cy="216" rx="33" ry="56" fill="#ffffff" opacity="0.75"/>
+                <ellipse cx="136" cy="296" rx="15" ry="9" fill="#f7f4e7" stroke="#104469" stroke-width="2.2"/>
+                <ellipse cx="164" cy="296" rx="15" ry="9" fill="#f7f4e7" stroke="#104469" stroke-width="2.2"/>
+                <path d="M116 132 Q 150 150 184 132" fill="none" stroke="#d77127" stroke-width="11" stroke-linecap="round"/>
+                <circle cx="150" cy="153" r="7" fill="#104469"/>
+                <circle cx="147.5" cy="150.5" r="2.1" fill="#d77127"/>
+            </g>
+
+            <g class="pet-head">
+                <g class="ear-l"><path d="M104 46 C 84 42 74 68 83 96 C 89 113 105 116 114 104 C 120 96 116 62 112 50 Z" fill="#f2ddbb" stroke="#104469" stroke-width="2.4"/></g>
+                <g class="ear-r"><path d="M196 46 C 216 42 226 68 217 96 C 211 113 195 116 186 104 C 180 96 184 62 188 50 Z" fill="#f2ddbb" stroke="#104469" stroke-width="2.4"/></g>
+
+                <ellipse cx="150" cy="76" rx="50" ry="46" fill="#f7f4e7" stroke="#104469" stroke-width="2.6"/>
+                <path d="M172 50 C 186 52 194 62 193 76 C 180 82 170 78 166 66 Z" fill="#f2ddbb" opacity="0.85"/>
+
+                <!-- Arched brows: the single biggest reason a face reads happy -->
+                <path class="pet-brow" d="M119 53 Q 132 44 145 53" fill="none" stroke="#104469" stroke-width="3" stroke-linecap="round"/>
+                <path class="pet-brow" d="M155 53 Q 168 44 181 53" fill="none" stroke="#104469" stroke-width="3" stroke-linecap="round"/>
+
+                <g class="pet-eyes">
+                    <g class="pet-eye">
+                        <circle cx="132" cy="73" r="11" fill="#ffffff" stroke="#104469" stroke-width="2.2"/>
+                        <circle class="pet-pupil" cx="132" cy="73" r="6.4" fill="#104469"/>
+                        <circle cx="129" cy="69.5" r="2.4" fill="#ffffff"/>
+                    </g>
+                    <g class="pet-eye">
+                        <circle cx="168" cy="73" r="11" fill="#ffffff" stroke="#104469" stroke-width="2.2"/>
+                        <circle class="pet-pupil" cx="168" cy="73" r="6.4" fill="#104469"/>
+                        <circle cx="165" cy="69.5" r="2.4" fill="#ffffff"/>
+                    </g>
+                </g>
+
+                <!-- Blush -->
+                <ellipse class="pet-blush" cx="115" cy="93" rx="9.5" ry="5.5" fill="#e3907b" opacity="0.5"/>
+                <ellipse class="pet-blush" cx="185" cy="93" rx="9.5" ry="5.5" fill="#e3907b" opacity="0.5"/>
+
+                <ellipse cx="150" cy="98" rx="25" ry="18" fill="#fffdf4" stroke="#104469" stroke-width="2.2"/>
+
+                <!-- Tongue peeks out a little at rest, drops fully when petted -->
+                <g class="dog-tongue"><path d="M141 106 Q 150 103 159 106 L 158 120 Q 150 130 142 120 Z" fill="#e28c93" stroke="#104469" stroke-width="2"/><path d="M150 109 L 150 120" stroke="#c9737b" stroke-width="1.8" stroke-linecap="round"/></g>
+
+                <ellipse cx="150" cy="90" rx="9.5" ry="6.8" fill="#104469"/>
+                <ellipse cx="146.8" cy="88" rx="2.6" ry="1.6" fill="#3d6f96"/>
+
+                <!-- The smile: corners sit HIGHER than the middle -->
+                <path class="pet-smile" d="M150 96 Q 141 111 130 101" fill="none" stroke="#104469" stroke-width="2.8" stroke-linecap="round"/>
+                <path class="pet-smile" d="M150 96 Q 159 111 170 101" fill="none" stroke="#104469" stroke-width="2.8" stroke-linecap="round"/>
+            </g>
+
+            <g class="pet-heart"><path d="M150 30 c -4 -9 -17 -8 -17 3 c 0 9 11 13 17 19 c 6 -6 17 -10 17 -19 c 0 -11 -13 -12 -17 -3 Z" fill="#d77127"/></g>
+        </svg>
+
+        <div class="pet-caption">
+            <p class="eyebrow">Compassion. Care. Trust.</p>
+            <h2>The clinic that answers at 3 a.m.</h2>
+            <p>
+                Surgery, vaccination, consultation and round-the-clock emergency
+                care, five minutes from Pokhara International Airport.
+            </p>
+            <ul class="hero-trust">
+                <li>24/7 emergency care</li>
+                <li>Qualified veterinarians</li>
+                <li>Modern, pet-friendly facilities</li>
+            </ul>
+            <a href="#appointment" class="btn btn-forest">Book an appointment</a>
+        </div>
+
+        <svg class="clinic-pet clinic-cat" viewBox="0 0 300 340" role="img" aria-label="A cheerful cat">
+            <ellipse cx="150" cy="328" rx="98" ry="8" fill="#104469" opacity="0.16"/>
+
+            <g class="cat-tail">
+                <path d="M212 262 Q 272 268 266 300 Q 260 332 220 324" fill="none" stroke="#104469" stroke-width="21" stroke-linecap="round"/>
+                <path d="M212 262 Q 272 268 266 300 Q 260 332 220 324" fill="none" stroke="#f7f4e7" stroke-width="16" stroke-linecap="round"/>
+                <path d="M249 321 Q 236 329 220 324" fill="none" stroke="#d77127" stroke-width="16" stroke-linecap="round"/>
+            </g>
+
+            <g class="pet-body">
+                <path d="M150 118 C 108 132 92 180 88 232 C 85 276 108 296 150 296 C 192 296 215 276 212 232 C 208 180 192 132 150 118 Z" fill="#f7f4e7" stroke="#104469" stroke-width="2.6"/>
+                <ellipse cx="150" cy="214" rx="31" ry="56" fill="#ffffff" opacity="0.75"/>
+                <ellipse cx="137" cy="294" rx="14" ry="9" fill="#f7f4e7" stroke="#104469" stroke-width="2.2"/>
+                <ellipse cx="163" cy="294" rx="14" ry="9" fill="#f7f4e7" stroke="#104469" stroke-width="2.2"/>
+                <path d="M120 130 Q 150 148 180 130" fill="none" stroke="#d77127" stroke-width="10" stroke-linecap="round"/>
+                <circle cx="150" cy="150" r="6.5" fill="#104469"/>
+                <circle cx="147.8" cy="148" r="2" fill="#d77127"/>
+            </g>
+
+            <g class="pet-head cat-head">
+                <g class="ear-l"><path d="M106 56 L114 6 L148 40 Z" fill="#f7f4e7" stroke="#104469" stroke-width="2.4" stroke-linejoin="round"/><path d="M114 46 L119 21 L136 37 Z" fill="#efc7b8"/></g>
+                <g class="ear-r"><path d="M194 56 L186 6 L152 40 Z" fill="#f7f4e7" stroke="#104469" stroke-width="2.4" stroke-linejoin="round"/><path d="M186 46 L181 21 L164 37 Z" fill="#efc7b8"/></g>
+
+                <ellipse cx="150" cy="78" rx="48" ry="44" fill="#f7f4e7" stroke="#104469" stroke-width="2.6"/>
+
+                <path class="pet-brow" d="M118 55 Q 131 47 144 56" fill="none" stroke="#104469" stroke-width="2.8" stroke-linecap="round"/>
+                <path class="pet-brow" d="M156 56 Q 169 47 182 55" fill="none" stroke="#104469" stroke-width="2.8" stroke-linecap="round"/>
+
+                <g class="pet-eyes">
+                    <g class="pet-eye">
+                        <ellipse cx="131" cy="75" rx="12.5" ry="11.5" fill="#ffffff" stroke="#104469" stroke-width="2.2"/>
+                        <ellipse class="pet-pupil" cx="131" cy="75" rx="4.4" ry="8.2" fill="#104469"/>
+                        <circle cx="128" cy="71" r="2.4" fill="#ffffff"/>
+                    </g>
+                    <g class="pet-eye">
+                        <ellipse cx="169" cy="75" rx="12.5" ry="11.5" fill="#ffffff" stroke="#104469" stroke-width="2.2"/>
+                        <ellipse class="pet-pupil" cx="169" cy="75" rx="4.4" ry="8.2" fill="#104469"/>
+                        <circle cx="166" cy="71" r="2.4" fill="#ffffff"/>
+                    </g>
+                </g>
+
+                <ellipse class="pet-blush" cx="112" cy="92" rx="9.5" ry="5.5" fill="#e3907b" opacity="0.5"/>
+                <ellipse class="pet-blush" cx="188" cy="92" rx="9.5" ry="5.5" fill="#e3907b" opacity="0.5"/>
+
+                <path d="M143 90 Q 150 86 157 90 Q 153.5 98 150 99 Q 146.5 98 143 90 Z" fill="#e3907b" stroke="#104469" stroke-width="1.8" stroke-linejoin="round"/>
+
+                <path class="pet-smile" d="M150 99 Q 142 110 132 101" fill="none" stroke="#104469" stroke-width="2.6" stroke-linecap="round"/>
+                <path class="pet-smile" d="M150 99 Q 158 110 168 101" fill="none" stroke="#104469" stroke-width="2.6" stroke-linecap="round"/>
+
+                <g class="pet-whiskers" stroke="#104469" stroke-width="2" stroke-linecap="round" opacity="0.7">
+                    <path d="M114 84 L 78 76"/><path d="M112 91 L 74 89"/><path d="M114 98 L 78 103"/>
+                    <path d="M186 84 L 222 76"/><path d="M188 91 L 226 89"/><path d="M186 98 L 222 103"/>
+                </g>
+            </g>
+
+            <g class="pet-heart"><path d="M150 30 c -4 -9 -17 -8 -17 3 c 0 9 11 13 17 19 c 6 -6 17 -10 17 -19 c 0 -11 -13 -12 -17 -3 Z" fill="#d77127"/></g>
+        </svg>
+    </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about section" id="about">
+    <div class="brand-mark brand-mark-about" aria-hidden="true"><svg viewBox="0 0 200 200" fill="currentColor" aria-hidden="true"><ellipse cx="63" cy="63" rx="20" ry="27" transform="rotate(-20 63 63)"/><ellipse cx="87" cy="42" rx="20" ry="28" transform="rotate(-6 87 42)"/><ellipse cx="116" cy="42" rx="20" ry="28" transform="rotate(6 116 42)"/><ellipse cx="140" cy="63" rx="20" ry="27" transform="rotate(20 140 63)"/><path fill-rule="evenodd" d="M100 82 C 128 82 152 106 152 133 C 152 158 128 172 100 172 C 72 172 48 158 48 133 C 48 106 72 82 100 82 Z M91 104 L91 120 L75 120 L75 140 L91 140 L91 158 L109 158 L109 140 L125 140 L125 120 L109 120 L109 104 Z"/></svg></div>
+    <div class="container about-grid">
+
+        <div class="reveal">
+            <p class="eyebrow">About us</p>
+            <h2>About Pokhara Pet Hospital</h2>
+            <p class="section-text">
+                Pokhara Pet Hospital Pvt. Ltd. provides professional veterinary
+                healthcare with compassion, care, and trust.
+            </p>
+            <p class="section-text">
+                We sit at Pokhara-14, Khasibazar, near the International Airport,
+                and we offer 24/7 emergency care, surgery, treatment, vaccination,
+                consultation, and advanced veterinary facilities for pets.
+            </p>
+        </div>
+
+        <div class="why-card reveal">
+            <h3>Why pet owners choose us</h3>
+            <ul class="check-list">
+                <li>Emergency care day and night, all year round</li>
+                <li>Qualified, experienced veterinary doctors</li>
+                <li>Modern equipment and clean, pet-friendly rooms</li>
+                <li>Easy to reach — right by the International Airport</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services section section-lime" id="services">
+    <div class="container">
+
+        <div class="section-head reveal">
+            <p class="eyebrow">What we do</p>
+            <h2>Our services</h2>
+        </div>
+
+        <div class="service-container">
+
+            <div class="service-card reveal">
+                <div class="icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+                </div>
+                <h3>Expert veterinary care</h3>
+                <p>Professional healthcare for pets and animals.</p>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
+                </div>
+                <h3>Surgery</h3>
+                <p>Advanced surgical procedures and treatments.</p>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <h3>Treatment</h3>
+                <p>Comprehensive treatment for a wide range of conditions.</p>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>Vaccination &amp; wellness</h3>
+                <p>Preventive care and vaccination programmes.</p>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                </div>
+                <h3>Consultation</h3>
+                <p>Expert advice and medical consultation.</p>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <h3>Emergency care 24/7</h3>
+                <p>Round-the-clock emergency veterinary services.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============ DOCTORS ============ -->
+<section class="doctors section" id="doctors">
+    <div class="container">
+
+        <div class="section-head reveal">
+            <p class="eyebrow">Meet the team</p>
+            <h2>Our veterinarians</h2>
+        </div>
+
+        <div class="doctor-container">
+
+            <div class="doctor-card reveal">
+                <img class="doctor-photo" src="image/dr-sonia.jpg.jpg" alt="Dr. Sonia Gurung">
+                <h3>Dr. Sonia Gurung</h3>
+                <p class="doctor-degree">M.V.Sc</p>
+                <p class="doctor-role">Veterinarian</p>
+            </div>
+
+            <div class="doctor-card reveal">
+                <img class="doctor-photo" src="image/dr-manoj.jpg.jpg" alt="Dr. Manoj Poudel">
+                <h3>Dr. Manoj Poudel</h3>
+                <p class="doctor-degree">B.V.Sc &amp; A.H.</p>
+                <p class="doctor-role">Veterinarian</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery section section-cream" id="gallery">
+    <div class="container">
+
+        <div class="section-head reveal">
+            <p class="eyebrow">Inside our clinic</p>
+            <h2>Our gallery</h2>
+        </div>
+
+        <div class="gallery-container">
+            <!-- To add a real photo, replace one box below with:
+                 <img class="gallery-img reveal" src="image/photo1.jpg" alt="Describe the photo"> -->
+            <div class="gallery-box reveal" aria-hidden="true"><svg viewBox="0 0 100 100"><g fill="currentColor"><ellipse cx="50" cy="66" rx="20" ry="16"/><ellipse cx="26" cy="42" rx="9" ry="12" transform="rotate(-20 26 42)"/><ellipse cx="42" cy="28" rx="9" ry="12" transform="rotate(-6 42 28)"/><ellipse cx="58" cy="28" rx="9" ry="12" transform="rotate(6 58 28)"/><ellipse cx="74" cy="42" rx="9" ry="12" transform="rotate(20 74 42)"/></g></svg><span>Photo coming soon</span></div>
+            <div class="gallery-box reveal" aria-hidden="true"><svg viewBox="0 0 100 100"><g fill="currentColor"><ellipse cx="50" cy="66" rx="20" ry="16"/><ellipse cx="26" cy="42" rx="9" ry="12" transform="rotate(-20 26 42)"/><ellipse cx="42" cy="28" rx="9" ry="12" transform="rotate(-6 42 28)"/><ellipse cx="58" cy="28" rx="9" ry="12" transform="rotate(6 58 28)"/><ellipse cx="74" cy="42" rx="9" ry="12" transform="rotate(20 74 42)"/></g></svg><span>Photo coming soon</span></div>
+            <div class="gallery-box reveal" aria-hidden="true"><svg viewBox="0 0 100 100"><g fill="currentColor"><ellipse cx="50" cy="66" rx="20" ry="16"/><ellipse cx="26" cy="42" rx="9" ry="12" transform="rotate(-20 26 42)"/><ellipse cx="42" cy="28" rx="9" ry="12" transform="rotate(-6 42 28)"/><ellipse cx="58" cy="28" rx="9" ry="12" transform="rotate(6 58 28)"/><ellipse cx="74" cy="42" rx="9" ry="12" transform="rotate(20 74 42)"/></g></svg><span>Photo coming soon</span></div>
+            <div class="gallery-box reveal" aria-hidden="true"><svg viewBox="0 0 100 100"><g fill="currentColor"><ellipse cx="50" cy="66" rx="20" ry="16"/><ellipse cx="26" cy="42" rx="9" ry="12" transform="rotate(-20 26 42)"/><ellipse cx="42" cy="28" rx="9" ry="12" transform="rotate(-6 42 28)"/><ellipse cx="58" cy="28" rx="9" ry="12" transform="rotate(6 58 28)"/><ellipse cx="74" cy="42" rx="9" ry="12" transform="rotate(20 74 42)"/></g></svg><span>Photo coming soon</span></div>
+            <div class="gallery-box reveal" aria-hidden="true"><svg viewBox="0 0 100 100"><g fill="currentColor"><ellipse cx="50" cy="66" rx="20" ry="16"/><ellipse cx="26" cy="42" rx="9" ry="12" transform="rotate(-20 26 42)"/><ellipse cx="42" cy="28" rx="9" ry="12" transform="rotate(-6 42 28)"/><ellipse cx="58" cy="28" rx="9" ry="12" transform="rotate(6 58 28)"/><ellipse cx="74" cy="42" rx="9" ry="12" transform="rotate(20 74 42)"/></g></svg><span>Photo coming soon</span></div>
+            <div class="gallery-box reveal" aria-hidden="true"><svg viewBox="0 0 100 100"><g fill="currentColor"><ellipse cx="50" cy="66" rx="20" ry="16"/><ellipse cx="26" cy="42" rx="9" ry="12" transform="rotate(-20 26 42)"/><ellipse cx="42" cy="28" rx="9" ry="12" transform="rotate(-6 42 28)"/><ellipse cx="58" cy="28" rx="9" ry="12" transform="rotate(6 58 28)"/><ellipse cx="74" cy="42" rx="9" ry="12" transform="rotate(20 74 42)"/></g></svg><span>Photo coming soon</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ EMERGENCY BAND ============ -->
+<section class="emergency">
+    <div class="brand-mark brand-mark-emergency" aria-hidden="true"><svg viewBox="0 0 200 200" fill="currentColor" aria-hidden="true"><ellipse cx="63" cy="63" rx="20" ry="27" transform="rotate(-20 63 63)"/><ellipse cx="87" cy="42" rx="20" ry="28" transform="rotate(-6 87 42)"/><ellipse cx="116" cy="42" rx="20" ry="28" transform="rotate(6 116 42)"/><ellipse cx="140" cy="63" rx="20" ry="27" transform="rotate(20 140 63)"/><path fill-rule="evenodd" d="M100 82 C 128 82 152 106 152 133 C 152 158 128 172 100 172 C 72 172 48 158 48 133 C 48 106 72 82 100 82 Z M91 104 L91 120 L75 120 L75 140 L91 140 L91 158 L109 158 L109 140 L125 140 L125 120 L109 120 L109 104 Z"/></svg></div>
+    <div class="container emergency-inner">
+        <div>
+            <h2><span class="pulse-dot" aria-hidden="true"></span> 24/7 emergency care</h2>
+            <p>Call us any time — day or night, we are here for your pet.</p>
+        </div>
+        <div class="emergency-numbers">
+            <a href="tel:9802859465" class="btn btn-white">9802859465</a>
+            <a href="tel:061590375" class="btn btn-white">061-590375</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============ APPOINTMENT ============ -->
+<section class="appointment section" id="appointment">
+    <div class="container appointment-grid">
+
+        <div class="appointment-intro reveal">
+            <p class="eyebrow">We're ready to help</p>
+            <h2>Book an appointment</h2>
+            <p class="section-text">
+                Fill the form and we'll confirm on WhatsApp. Prefer to just talk
+                it through? Mitra can take the booking in a conversation instead.
+            </p>
+            <button type="button" class="btn btn-forest" data-open-mitra>Book by chatting with Mitra</button>
+        </div>
+
+        <form class="appointment-form reveal" action="https://formspree.io/f/mwvgnpgn" method="POST">
+
+            <div class="form-grid">
+                <div class="form-field">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name" placeholder="e.g. Sita Sharma" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="98XXXXXXXX" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="pet">Pet name</label>
+                    <input type="text" id="pet" name="pet" placeholder="e.g. Bruno">
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="message">What does your pet need?</label>
+                <textarea id="message" name="message" placeholder="Describe the symptoms or the reason for the visit..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Send booking request</button>
+
+            <div class="form-success" hidden>
+                <div class="form-success-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                </div>
+                <h3>Thank you<span class="form-success-name"></span>!</h3>
+                <p class="form-success-text">Your request is with the clinic — we'll confirm on your number shortly.</p>
+                <p class="form-success-hint">WhatsApp is opening with the same details. Press <strong>Send</strong> there and the front desk sees it instantly.</p>
+            </div>
+
+        </form>
+    </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact section section-cream" id="contact">
+    <div class="container">
+
+        <div class="section-head reveal">
+            <p class="eyebrow">Find us</p>
+            <h2>Contact us</h2>
+        </div>
+
+        <div class="contact-container">
+
+            <div class="contact-box reveal">
+                <h3>Address</h3>
+                <p>Pokhara-14, Khasibazar,<br>near the International Airport</p>
+            </div>
+
+            <div class="contact-box reveal">
+                <h3>Phone &amp; email</h3>
+                <p><a href="tel:9802859465">9802859465</a></p>
+                <p><a href="tel:061590375">061-590375</a></p>
+                <p><a href="https://wa.me/9779802859465">WhatsApp: 9802859465</a></p>
+                <p><a href="mailto:Pokharapethospital@gmail.com">Pokharapethospital@gmail.com</a></p>
+            </div>
+
+            <div class="contact-box reveal">
+                <h3>Working hours</h3>
+                <p>24 hours / 7 days</p>
+                <p>Emergency care available</p>
+            </div>
+
+        </div>
+
+        <div class="map-wrap reveal">
+            <iframe
+                src="https://maps.google.com/maps?q=Khasibazar%2C%20Pokhara&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                title="Map showing the location of Pokhara Pet Hospital"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="map-btn-wrap reveal">
+            <a href="https://maps.app.goo.gl/SyG8Qw8TgPNkxawj8" target="_blank" rel="noopener" class="btn btn-forest">Get directions on Google Maps</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+    <div class="brand-mark brand-mark-footer" aria-hidden="true"><svg viewBox="0 0 200 200" fill="currentColor" aria-hidden="true"><ellipse cx="63" cy="63" rx="20" ry="27" transform="rotate(-20 63 63)"/><ellipse cx="87" cy="42" rx="20" ry="28" transform="rotate(-6 87 42)"/><ellipse cx="116" cy="42" rx="20" ry="28" transform="rotate(6 116 42)"/><ellipse cx="140" cy="63" rx="20" ry="27" transform="rotate(20 140 63)"/><path fill-rule="evenodd" d="M100 82 C 128 82 152 106 152 133 C 152 158 128 172 100 172 C 72 172 48 158 48 133 C 48 106 72 82 100 82 Z M91 104 L91 120 L75 120 L75 140 L91 140 L91 158 L109 158 L109 140 L125 140 L125 120 L109 120 L109 104 Z"/></svg></div>
+    <div class="container footer-grid">
+
+        <div>
+            <img class="footer-logo" src="image/logo.png.jpg" alt="Pokhara Pet Hospital logo">
+            <h3>Pokhara Pet Hospital Pvt. Ltd.</h3>
+            <p>Compassion. Care. Trust.</p>
+            <p>pokharapethospital.com.np</p>
+            <div class="socials">
+                <a href="https://www.instagram.com/pokharapethospital" target="_blank" rel="noopener" aria-label="Follow us on Instagram">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <h4>Quick links</h4>
+            <ul class="footer-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#appointment">Book appointment</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>Pokhara-14, Khasibazar</p>
+            <p><a href="tel:9802859465">9802859465</a></p>
+            <p><a href="tel:061590375">061-590375</a></p>
+            <p><a href="mailto:Pokharapethospital@gmail.com">Pokharapethospital@gmail.com</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Pokhara Pet Hospital. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- ============ MITRA — AI PET CARE ASSISTANT ============ -->
+<button class="mitra-fab" id="mitraFab" aria-label="Chat with Mitra, our pet care assistant" aria-expanded="false" aria-controls="mitraPanel">
+    <span class="mitra-fab-avatar" aria-hidden="true">
+        <svg viewBox="0 0 100 100" fill="currentColor"><ellipse cx="50" cy="66" rx="20" ry="16"/><ellipse cx="26" cy="42" rx="9" ry="12" transform="rotate(-20 26 42)"/><ellipse cx="42" cy="28" rx="9" ry="12" transform="rotate(-6 42 28)"/><ellipse cx="58" cy="28" rx="9" ry="12" transform="rotate(6 58 28)"/><ellipse cx="74" cy="42" rx="9" ry="12" transform="rotate(20 74 42)"/></svg>
+    </span>
+    <span class="mitra-fab-label">Ask Mitra</span>
+</button>
+
+<section class="mitra-panel" id="mitraPanel" role="dialog" aria-modal="false" aria-labelledby="mitraTitle" hidden>
+
+    <header class="mitra-head">
+        <div class="mitra-id">
+            <span class="mitra-avatar" aria-hidden="true">
+                <svg viewBox="0 0 100 100" fill="currentColor"><ellipse cx="50" cy="66" rx="20" ry="16"/><ellipse cx="26" cy="42" rx="9" ry="12" transform="rotate(-20 26 42)"/><ellipse cx="42" cy="28" rx="9" ry="12" transform="rotate(-6 42 28)"/><ellipse cx="58" cy="28" rx="9" ry="12" transform="rotate(6 58 28)"/><ellipse cx="74" cy="42" rx="9" ry="12" transform="rotate(20 74 42)"/></svg>
+            </span>
+            <div>
+                <h2 id="mitraTitle">Mitra</h2>
+                <p>Pet care assistant · Pokhara Pet Hospital</p>
+            </div>
+        </div>
+        <button class="mitra-close" id="mitraClose" aria-label="Close chat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+    </header>
+
+    <div class="mitra-log" id="mitraLog" role="log" aria-live="polite" aria-atomic="false"></div>
+
+    <div class="mitra-chips" id="mitraChips"></div>
+
+    <form class="mitra-composer" id="mitraForm" autocomplete="off">
+        <label class="sr-only" for="mitraInput">Message Mitra</label>
+        <input type="text" id="mitraInput" placeholder="Type your message...">
+        <button type="submit" id="mitraSend" aria-label="Send message">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+        </button>
+    </form>
+
+    <p class="mitra-disclaimer">
+        Mitra helps with bookings and general questions. It does not diagnose or
+        prescribe. For an emergency, call <a href="tel:9802859465">9802859465</a>.
+    </p>
+</section>
+
+<!-- Floating call button — phones only -->
+<a href="tel:9802859465" class="call-fab" aria-label="Call Pokhara Pet Hospital now">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+</a>
+
+<!-- ============ LIGHTBOX (click a logo or photo to enlarge) ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged image" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <figure>
+        <img id="lightboxImg" src="" alt="">
+        <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+</div>
+
+<script src="script.js?v=11"></script>
+
+</body>
+</html>
