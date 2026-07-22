@@ -85,7 +85,10 @@ async function callGemini(messages, key) {
                 system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
                 contents,
                 generationConfig: {
-                    maxOutputTokens: 700,
+                    // Newer Gemini models "think" before answering, and the
+                    // thinking secretly counts against this budget. 700 was
+                    // starving the visible reply mid-sentence.
+                    maxOutputTokens: 4000,
                     temperature: 0.6,
                     // Forces valid JSON — no stray prose to clean up
                     responseMimeType: 'application/json'
@@ -99,6 +102,12 @@ async function callGemini(messages, key) {
     }
 
     const data = await res.json();
+
+    const finish = data?.candidates?.[0]?.finishReason;
+    if (finish && finish !== 'STOP') {
+        console.error('Gemini stopped early, finishReason:', finish);
+    }
+
     return (data?.candidates?.[0]?.content?.parts || [])
         .map(p => p.text || '')
         .join('')
@@ -119,7 +128,7 @@ async function callAnthropic(messages, key) {
         },
         body: JSON.stringify({
             model: process.env.ANTHROPIC_MODEL || 'claude-sonnet-4-6',
-            max_tokens: 700,
+            max_tokens: 1000,
             system: SYSTEM_PROMPT,
             messages
         })
@@ -182,8 +191,27 @@ export default async function handler(req, res) {
         try {
             parsed = JSON.parse(cleaned);
         } catch {
-            // Malformed JSON must not break the chat — pass the text through
-            parsed = { reply: raw, chips: [], booking: { complete: false } };
+            // The model's JSON was cut off or malformed. Never dump raw
+            // code into the chat — extract the human sentence from the
+            // wreckage. The "reply" field comes first, so it usually
+            // survives truncation intact.
+            let reply = '';
+            const m = cleaned.match(/"reply"\s*:\s*"((?:[^"\\]|\\.)*)"/);
+            if (m) {
+                try { reply = JSON.parse('"' + m[1] + '"'); }  // unescape \n etc.
+                catch { reply = m[1]; }
+            }
+            parsed = {
+                reply: reply ||
+                    'Sorry, I lost my thread for a moment — could you say that once more?',
+                chips: [],
+                booking: { complete: false }
+            };
+        }
+
+        // Belt and braces: a visitor must never see raw JSON as a reply
+        if (typeof parsed.reply === 'string' && parsed.reply.trim().startsWith('{')) {
+            parsed.reply = 'Sorry, I lost my thread for a moment — could you say that once more?';
         }
 
         return res.status(200).json({
