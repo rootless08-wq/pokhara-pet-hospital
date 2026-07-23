@@ -1,5 +1,5 @@
 /* ==========================================================
-   POKHARA PET HOSPITAL — script.js (v11)
+   POKHARA PET HOSPITAL — script.js (v12)
 
    1. Mobile menu
    2. Navbar shadow on scroll
@@ -17,7 +17,7 @@
    say v7, the browser is still running an old cached copy of this file —
    see SETUP-FREE-AI.md for the hard-refresh steps. */
 
-const MITRA_VERSION = 'v11';
+const MITRA_VERSION = 'v12';
 console.log('%c Mitra ' + MITRA_VERSION + ' loaded ', 'background:#104469;color:#f2a54c;padding:2px 6px;border-radius:3px');
 
 

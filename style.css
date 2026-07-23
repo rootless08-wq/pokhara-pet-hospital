@@ -1,5 +1,5 @@
 /* ==========================================================
-   POKHARA PET HOSPITAL — style.css (v11)
+   POKHARA PET HOSPITAL — style.css (v12)
    Palette taken from the reference: lime, deep forest, cream.
    New: Mitra assistant panel, hero ask bar, happier pets.
    ========================================================== */
@@ -43,8 +43,8 @@
     --radius-lg:28px;
     --shadow:0 14px 40px rgba(43,33,23,0.10);
     --shadow-lift:0 22px 60px rgba(43,33,23,0.20);
-    --font-display:'Instrument Serif',Georgia,serif;
-    --font-body:'Figtree','Segoe UI',Arial,sans-serif;
+    --font-display:'Fraunces',Georgia,serif;
+    --font-body:'Nunito','Trebuchet MS','Segoe UI',sans-serif;
 }
 
 /* ---------- RESET ---------- */
@@ -98,9 +98,9 @@ a{ color:inherit; }
 h1,h2,h3,h4{
     font-family:var(--font-display);
     color:var(--forest);
-    line-height:1.08;
-    font-weight:400;
-    letter-spacing:-0.01em;
+    line-height:1.1;
+    font-weight:560;
+    letter-spacing:-0.015em;
 }
 
 h1{ font-size:clamp(38px, 5.4vw, 66px); }
@@ -117,7 +117,7 @@ h3{ font-size:24px; }
     color:var(--orange-text);
     font-weight:700;
     text-transform:uppercase;
-    letter-spacing:2.4px;
+    letter-spacing:1.5px;
     font-size:12px;
     margin-bottom:14px;
 }
