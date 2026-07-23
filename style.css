@@ -1,5 +1,5 @@
 /* ==========================================================
-   POKHARA PET HOSPITAL — style.css (v12)
+   POKHARA PET HOSPITAL — style.css (v13)
    Palette taken from the reference: lime, deep forest, cream.
    New: Mitra assistant panel, hero ask bar, happier pets.
    ========================================================== */
@@ -1556,4 +1556,70 @@ footer .footer-bottom{
 @media (prefers-reduced-motion:reduce){
     .lightbox,
     .lightbox img{ animation:none !important; }
+}
+
+
+/* ==========================================================
+   REVIEWS — honest social proof for a young clinic
+   ========================================================== */
+
+.review-cta{
+    text-align:center;
+    max-width:62ch;
+    margin:0 auto;
+}
+
+.review-cta p{
+    color:var(--ink-soft);
+    font-size:17px;
+    margin-bottom:24px;
+}
+
+.review-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
+
+.review-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:22px;
+    margin-top:48px;
+}
+
+.review-card{
+    background:var(--paper);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:28px 26px;
+}
+
+.review-stars{
+    display:flex;
+    gap:3px;
+    margin-bottom:14px;
+}
+
+.review-stars svg{
+    width:19px; height:19px;
+    fill:var(--amber-deep);
+}
+
+.review-text{
+    color:var(--ink);
+    font-size:15.5px;
+    margin-bottom:16px;
+}
+
+.review-name{
+    font-weight:800;
+    color:var(--navy);
+    font-size:15px;
+}
+
+.review-source{
+    color:var(--ink-soft);
+    font-size:13px;
 }
